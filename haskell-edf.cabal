@@ -1,0 +1,24 @@
+name:                edf
+version:             0.1.0.0
+synopsis:            Implementation of the EDF/EDF+ data formats for medical time series
+description:         Implementation of the EDF/EDF+ data formats for
+                     medical time series. This is a pure Haskell
+                     implementation, not bindings to the C library.
+homepage:            https://github.com/fractalcat/haskell-edf
+license:             MIT
+license-file:        LICENSE
+author:              Sharif Olorin
+maintainer:          sio@tesser.org
+copyright:           Sharif Olorin 2015
+category:            Data
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     Data.EDF
+  build-depends:       base >=4.7 && <5,
+                       bytestring,
+                       packer
+  hs-source-dirs:      lib
+  default-language:    Haskell2010
